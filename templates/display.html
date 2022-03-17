@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="static/css/all.min.css" />
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/templatemo-style.css" />
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+  <!-- Content here -->
+<ul class="list-group">
+    <h2>color in image</h2>
+    {% for color in colors%}
+  <li class="list-group-item" style="background-color:rgb{{ color }};">{{ color }}</li>
+
+{% endfor %}
+    </ul>
+    </div>
+<script src="static/js/jquery.min.js"></script>
+    <script src="static/js/parallax.min.js"></script>
+</body>
+</html>
